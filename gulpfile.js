@@ -3,8 +3,8 @@ var watchLess = require('gulp-watch-less');
 var less = require('gulp-less');
  
 gulp.task('default', function () {
-    return gulp.src('less/file.less')
-        .pipe(watchLess('less/file.less'))
+    return gulp.src('less/*.less')
+        .pipe(watchLess('less/*.less'))
         .pipe(less())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('css'));
 });
