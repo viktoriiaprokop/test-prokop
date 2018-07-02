@@ -5,21 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width">
 	<title>Test Prokop</title>
+	<link href="./node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<section id="first-screen">
-		<div class="block-icon-with-heart"></div>
+		<div id="user-pic">
+			<i class="fa fa-heart"></i>
+		</div>
 		<div class="block-img-seventeen">
 			<picture>
-				<img src="">
+				<img src="img/17.png">
 			</picture>
 		</div>
-		<div class="block-with-text"></div>
-		<div id="block-to-scroll"></div>
+		<p class="block-with-text">de 17 belangrijkste</p>
+		<p class="block-with-text">nieuwsmomente van 2017</p>
+		<p class="block-with-text">volgens nu.nl</p>
+		<div id="block-to-scroll">
+			<span>Scroll om te lezen</span>
+			<a href="#second-section" class="scroll-link"></a>
+		</div>
 	</section>
 	<section id="second-section"></section>
+	<footer>
+		<p>deel op social media</p>
+		<div class="social-net">
+			<div class="icon-wrap"><i class="fa fa-whatsapp"></i></div>
+			<div class="icon-wrap"><i class="fa fa-facebook-f"></i></div>
+			<div class="icon-wrap"><i class="fa fa-twitter"></i></div>
+		</div>
+		<span>Copyright 2018</span>
+	</footer>
 	<script src="js/main.js"></script>
 </body>
 </html>

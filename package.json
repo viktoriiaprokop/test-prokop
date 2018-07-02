@@ -1,6 +1,7 @@
 {
     "name": "P1",
     "dependencies": {
+        "font-awesome": "^4.7.0",
         "gulp": "^3.9.1",
         "gulp-less": "^3.5.0",
         "gulp-watch-less": "^1.0.1"

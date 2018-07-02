@@ -1,3 +1,232 @@
+//Font
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.eot');
+  src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff'),
+    url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+//Variables
+@black:         #000000;
+@white:         #ffffff;
+@dark-purple:   #202545;
+
 body {
-    background: red;
+  margin: 0;
+  box-sizing: border-box;
+
+  * {
+    font-family: 'Roboto-Regular';
+  }
+}
+
+#first-screen,
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#first-screen {  
+  height: 100vh;
+}
+
+#user-pic {
+  border-radius: 50%;
+  background: @dark-purple;
+  width: 65px;
+  margin: 60px 0 35px;
+  height: 65px;
+  position: relative;
+
+  i {
+    position: absolute;
+    color: red;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+  }
+}
+
+.block-img-seventeen {
+  height: 60%;
+  max-height: 240px;
+  margin-bottom: 30px;
+
+  img {
+    height: 100%;
+  }
+}
+
+.block-with-text {
+  line-height: 30px;
+  font-size: 20px;
+  margin: 2.5px 0;
+  background-color: @dark-purple;
+  padding: 0 10px;
+  color: @white;
+  text-transform: uppercase;
+}
+
+#block-to-scroll {
+  margin-top: 30px;
+
+  span {
+    color: @dark-purple;
+  }
+
+  a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid @dark-purple;
+    margin: 10px auto 0;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      border-left: 2px solid @dark-purple;
+      border-bottom: 2px solid @dark-purple;
+      height: 10px;
+      width: 10px;
+      top: 50%;
+      left: 50%;
+      transform: rotate(-45deg) translateY(-10px) translateX(1px);
+      position: absolute;
+    }
+  }
+}
+
+#second-section {
+  max-width: 960px;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+  }
+
+  *:not(.date) {
+    color: @dark-purple;
+  }
+
+  h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 45px;
+    margin-top: 0;
+    padding-top: 25px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: 25px;
+  }
+
+  p + div {
+    position: relative;
+    padding-bottom: 60%;
+
+    picture {
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.article-details {
+  max-width: 710px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border-left: 2px solid #eee;
+  padding-left: 45px;
+  padding-bottom: 60px;
+  position: relative;
+
+  .date {
+    color: red;
+    font-family: 'Roboto-Bold';
+    position: absolute;
+    left: -20px;
+    top: 35px;
+    text-align: center;
+    line-height: 18px;
+    background-color: @white;
+    width: 40px;
+  }
+}
+
+.article img {
+  border-radius: 5px;
+}
+
+footer {
+  background: @dark-purple;
+
+  * {
+    color: @white;
+  }
+
+  p {
+    background-color: @white;
+    color: @dark-purple;
+    font-size: 20px;
+    font-family: 'Roboto-Bold';
+    line-height: 1.7;
+    margin: 40px;
+    padding: 0 8px;
+    text-transform: uppercase;
+  }
+
+  .social-net {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icon-wrap {
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 12px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
 }
