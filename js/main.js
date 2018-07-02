@@ -25,6 +25,7 @@ xhr.onreadystatechange = function() {
             +'<picture>'
               +'<img src="img/'+articleData.img+'">'
             +'</picture>'
+            +'<div class="icon-wrap"><i class="fa fa-play"></i></div>'
           +'</div>'
         +'</div>'
       +'</div>';
