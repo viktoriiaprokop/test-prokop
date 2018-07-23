@@ -6,10 +6,9 @@ xhr.send();
 xhr.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var response = JSON.parse(xhr.response);
-  var htmlBlock = '';
+    var htmlBlock = '';
 
-  for (var i = 0; i < response.length; i++) {
-    console.log(response[i]);
+    for (var i = 0; i < response.length; i++) {
       var articleData = response[i];
       htmlBlock += '<div class="article">'
       +'<div>'
